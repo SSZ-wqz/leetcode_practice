@@ -1,7 +1,7 @@
 package Backtrace;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Q216组合总和III {
   
@@ -24,7 +24,7 @@ public class Q216组合总和III {
               backtracking(k, n, i + 1, curSum += i);
           }
           curSum -= i;
-          path.removeLast();
+          path.remove(path.size() - 1);
       }
   }
 
